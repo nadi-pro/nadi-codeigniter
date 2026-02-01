@@ -1,0 +1,38 @@
+{
+    "name": "nadi-pro/nadi-codeigniter",
+    "description": "Nadi monitoring SDK for CodeIgniter 4 applications",
+    "license": "MIT",
+    "require": {
+        "php": "^8.1",
+        "nadi-pro/nadi-php": "^2.0",
+        "codeigniter4/framework": "^4.3"
+    },
+    "require-dev": {
+        "laravel/pint": "^1.15",
+        "mockery/mockery": "^1.5",
+        "phpunit/phpunit": "^10.0 || ^11.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Nadi\\CodeIgniter\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Nadi\\CodeIgniter\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "@php vendor/bin/phpunit",
+        "format": "@php vendor/bin/pint"
+    },
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "php-http/discovery": true,
+            "tbachert/spi": true
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
