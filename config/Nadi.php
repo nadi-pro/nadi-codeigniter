@@ -17,7 +17,7 @@ class Nadi extends BaseConfig
         'http' => [
             'apiKey' => '',
             'appKey' => '',
-            'endpoint' => 'https://api.nadi.pro',
+            'endpoint' => 'https://nadi.pro/api',
             'version' => 'v1',
         ],
         'opentelemetry' => [
